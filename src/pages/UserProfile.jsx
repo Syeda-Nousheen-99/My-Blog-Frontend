@@ -4,6 +4,7 @@ import { MdEditSquare } from "react-icons/md";
 import { FaCheck } from "react-icons/fa";
 import { TextField } from '@mui/material'
 import { UserContext } from '../context/userContext';
+import defaultAvatar from '../images/user.png'
 import axios from 'axios';
 
 const UserProfile = () => {
@@ -116,7 +117,7 @@ const UserProfile = () => {
         <div className='profile_detail'>
           <div className='avatar_wrapper'>
             <div className='profile_avatar'>
-              <img src={avatar} alt='' />
+              <img src={avatar || defaultAvatar} alt='' />
             </div>
             {/* Form to update avatar */}
             <form className='avatar_form'>

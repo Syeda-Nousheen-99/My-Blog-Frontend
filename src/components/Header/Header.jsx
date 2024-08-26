@@ -96,7 +96,7 @@ const Header = ({ userName }) => {
                 ) : (
                   <img 
                     src={author.avatar || defaultAvatar}
-                    alt={`${author.name || 'User'}'s Avatar`}
+                    // alt={`${author.name || 'User'}'s Avatar`}
                     style={{ width: 40, height: 40, borderRadius: '50%' }}
                     onError={(e) => e.target.src = defaultAvatar}
                   />
