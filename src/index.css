@@ -476,8 +476,6 @@ h1, h4, h2 {
 
 .avatar_wrapper {
     width: 15rem;
-    aspect-ratio: 1/1;
-    object-fit: cover;
     position: relative;
     margin-inline: auto;
     margin-top: 1rem;
@@ -489,6 +487,8 @@ h1, h4, h2 {
     border-radius: 50%;
     border: 1rem solid #1B1F3B;
     overflow: hidden;
+    aspect-ratio: 2/2;
+    object-fit: cover;
 }
 
 .avatar_form {

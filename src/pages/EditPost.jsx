@@ -85,6 +85,7 @@ const EditPost = () => {
         const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/posts/${id}`, { withCredentials: true});
         setTitle(response.data.title)
         setDescription(response.data.description)
+        setCategory(response.data.category)
         
       }catch(error) {
         console.log(error);
